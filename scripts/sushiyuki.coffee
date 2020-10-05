@@ -81,7 +81,7 @@ formatEmoticonList = (emoticons) ->
 module.exports = (robot) ->
   sushiyuki = new Sushiyuki
 
-  robot.hear /寿司|鮨|スシ|🍣/, (msg) ->
+  robot.hear /寿司|鮨|🍣/, (msg) ->
     msg.send sushiyuki.sushiMe("sneak")
 
   robot.respond /sushi list/i, (msg) ->
